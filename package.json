@@ -1,7 +1,7 @@
 {
   "name": "bury",
-  "version": "1.1.0",
-  "description": "Safely get a dot-notated property within an object.",
+  "version": "0.1.0",
+  "description": "Safely set a dot-notated property within an object.",
   "main": "dist/bury.js",
   "browser": "dist/bury.umd.js",
   "jsnext:main": "index.js",
