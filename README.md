@@ -2,6 +2,10 @@
 
 > Safely set a dot-notated path within a nested object, return undefined if the full key path does not exist, otherwise return the value set.
 
+### NPM
+
+https://www.npmjs.com/package/bury
+
 ### Usage
 
 `bury(object, keypath, value)`
