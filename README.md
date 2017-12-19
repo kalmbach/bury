@@ -29,8 +29,10 @@ bury(obj, ['a', 'b', 'c'], 2) === 2;
 bury(obj, 'a.b.c.f', "foo") === undefined;
 ```
 
+### Tests
+
+https://github.com/kalmbach/bury/blob/master/test.js
+
 ### License
 
 MIT
-
-[tests]: https://github.com/kalmbach/bury/blob/master/test.js
