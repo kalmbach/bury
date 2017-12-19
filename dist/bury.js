@@ -1,0 +1,1 @@
+function bury(r,t,o){for(var e=0,n=(t=t.split?t.split("."):t)[t.length-1];r.hasOwnProperty(t[e])&&t[e]!==n;)r=r[t[e++]];return r.hasOwnProperty(n)?r[n]=o:void 0}module.exports=bury;

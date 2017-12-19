@@ -1,0 +1,1 @@
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):e.bury=n()}(this,function(){return function(e,n,t){for(var o=0,r=(n=n.split?n.split("."):n)[n.length-1];e.hasOwnProperty(n[o])&&n[o]!==r;)e=e[n[o++]];return e.hasOwnProperty(r)?e[r]=t:void 0}});

@@ -1,0 +1,32 @@
+{
+  "name": "bury",
+  "version": "1.1.0",
+  "description": "Safely get a dot-notated property within an object.",
+  "main": "dist/bury.js",
+  "browser": "dist/bury.umd.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "build": "mkdir -p dist && npm run -s build:cjs && npm run -s build:umd",
+    "build:cjs": "rollup -i $npm_package_jsnext_main -f cjs --no-strict | uglifyjs -cm -o $npm_package_main",
+    "build:umd": "rollup -i $npm_package_jsnext_main -n $npm_package_name -f umd --no-strict | uglifyjs -cm -o $npm_package_browser",
+    "prepublish": "npm run build",
+    "test": "node test",
+    "release": "npm run build && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "keywords": [
+    "bury",
+    "dot notation",
+    "dot"
+  ],
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "author": "Jorge Kalmbach <kalmbach@gmail.com>",
+  "repository": "kalmbach/bury",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.41.6",
+    "uglify-js": "^3.2.2"
+  }
+}
