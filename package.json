@@ -26,7 +26,7 @@
   "repository": "kalmbach/bury",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^0.41.6",
+    "rollup": "^3.29.5",
     "uglify-js": "^3.2.2"
   }
 }
